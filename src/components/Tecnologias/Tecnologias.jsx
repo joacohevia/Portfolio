@@ -1,0 +1,57 @@
+const grupos = [
+  {
+    label: 'Backend',
+    techs: [
+      { nombre: 'Java', color: '#f89820' },
+      { nombre: 'Spring Boot', color: '#6db33f' },
+      { nombre: 'PHP', color: '#777bb4' },
+      { nombre: 'SQL', color: '#cc2927' },
+      { nombre: 'PostgreSQL', color: '#336791' },
+      { nombre: 'MySQL', color: '#4479a1' },
+      { nombre: 'Microservicios', color: '#00d4aa' },
+      { nombre: 'Docker', color: '#2496ed' },
+    ],
+  },
+  {
+    label: 'Frontend',
+    techs: [
+      { nombre: 'JavaScript', color: '#f7df1e' },
+      { nombre: 'TypeScript', color: '#3178c6' },
+      { nombre: 'React', color: '#61dafb' },
+      { nombre: 'Angular', color: '#dd0031' },
+    ],
+  },
+  {
+    label: 'Herramientas y Metodologías',
+    techs: [
+      { nombre: 'Postman', color: '#ff6c37' },
+      { nombre: 'Swagger', color: '#85ea2d' },
+      { nombre: 'Figma', color: '#f24e1e' },
+      { nombre: 'Git', color: '#f05032' },
+      { nombre: 'Scrum', color: '#00d4aa' },
+    ],
+  },
+];
+
+export default function Tecnologias() {
+  return (
+    <section id="tecnologias" className="section">
+      <div className="section-label">03 — tecnologías</div>
+      <h2 className="section-title">Mi stack</h2>
+
+      {grupos.map(grupo => (
+        <div key={grupo.label} className="tech-group">
+          <div className="tech-group-label">{grupo.label}</div>
+          <div className="tech-pills">
+            {grupo.techs.map(tech => (
+              <div key={tech.nombre} className="tech-pill">
+                <span className="dot" style={{ background: tech.color }} />
+                {tech.nombre}
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </section>
+  );
+}
