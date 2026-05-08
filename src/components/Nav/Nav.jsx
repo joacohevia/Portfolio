@@ -11,7 +11,20 @@ const links = [
 export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('');
+  //funcion scroll
+    const handleNavClick = (e, href) => {
+    e.preventDefault();
+    setMenuOpen(false);
 
+    const target = document.querySelector(href);
+    if (!target) return;
+
+    const navHeight = 1;
+    const extraOffset = 5;//mas abajo le resto
+    const top = target.getBoundingClientRect().top + window.scrollY - navHeight - extraOffset;
+
+    window.scrollTo({ top, behavior: 'smooth' });
+  };
   useEffect(() => {
     const sections = links.map(l => document.querySelector(l.href));
 
@@ -38,7 +51,7 @@ export default function Nav() {
             <a
               href={link.href}
               className={activeSection === link.href ? 'active' : ''}
-              onClick={() => setMenuOpen(false)}
+              onClick={(e) => handleNavClick(e,link.href)}
             >
               {link.label}
             </a>

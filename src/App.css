@@ -1,6 +1,4 @@
-/* ===========================
-   RESET & BASE
-=========================== */
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -670,7 +668,7 @@ body {
   }
 
   .hero {
-    flex-direction: column-reverse;
+    flex-direction: column;
     padding: 2.5rem 1.2rem 2rem;
     gap: 2rem;
     text-align: center;
