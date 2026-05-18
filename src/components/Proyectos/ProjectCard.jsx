@@ -20,9 +20,9 @@ export default function ProjectCard({ title, description, tags, image, link, dep
           <a 
             href={deploy} 
             target="_blank" 
-            rel="noopener noreferrer" // 🔒 Seguridad: evita acceso al window.opener
-            className="deploy-link"    // 🎨 Para estilizar con CSS
-            onClick={(e) => e.stopPropagation()} // ⚠️ Evita que el click burbujee al padre
+            rel="noopener noreferrer" 
+            className="deploy-link"   
+            onClick={(e) => e.stopPropagation()}
           >
             Ver demo →
           </a>

@@ -1,5 +1,6 @@
 import Foto1 from '../../assets/ChatIA 2025-11-24 171554.png';
 import Foto3 from '../../assets/FrenteAngular.jpg';
+import Foto4 from '../../assets/FrenteHerramientas.png';
 import Foto2 from '../../assets/PostSwagAPI.png';
 import ProjectCard from './ProjectCard';
 // Editá este array para agregar tus proyectos reales
@@ -32,6 +33,15 @@ const proyectos = [
     link: 'https://www.linkedin.com/in/joaquin-hevia3704/details/projects/',
     deploy: 'https://tienda-front-three.vercel.app/productos'
   },
+  {
+    id: 4,
+    title: 'Frontend de tienda Herramientas-Tandil(En desarrollo)',
+    description: 'Tienda online de herramientas diseñada para ofrecer una experiencia de compra rápida, moderna e intuitiva. Los usuarios pueden explorar un catálogo de productos, ver detalles de cada herramienta, buscar por categorías y realizar compras de forma sencilla desde una interfaz responsive y atractiva.',
+    tags: ['React', 'Postgresql', 'Vercel', 'Responsive Design.'],
+    image: Foto4,
+    link: 'En desarrollo',
+    deploy:''
+  }
 ];
 
 export default function Proyectos() {

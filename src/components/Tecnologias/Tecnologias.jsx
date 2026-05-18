@@ -15,6 +15,8 @@ const grupos = [
   {
     label: 'Frontend',
     techs: [
+      { nombre: 'Html', color: '#e34f26' },
+      { nombre: 'Css', color: '#1572b6' },
       { nombre: 'JavaScript', color: '#f7df1e' },
       { nombre: 'TypeScript', color: '#3178c6' },
       { nombre: 'React', color: '#61dafb' },
