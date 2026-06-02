@@ -1,12 +1,12 @@
 import './App.css';
 import Contacto from './components/Contacto/Contacto';
+import Experiencia from './components/Experiencia/Experiencia';
 import Formacion from './components/Formacion/Formacion';
 import Hero from './components/Hero/Hero';
 import Nav from './components/Nav/Nav';
 import Proyectos from './components/Proyectos/Proyectos';
 import SobreMi from './components/SobreMi/SobreMi';
 import Tecnologias from './components/Tecnologias/Tecnologias';
-
 function App() {
   return (
     <>
@@ -17,6 +17,7 @@ function App() {
         <Proyectos />
         <Tecnologias />
         <Formacion />
+        <Experiencia />
         <Contacto />
       </main>
       <footer className="footer">

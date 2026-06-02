@@ -1,3 +1,4 @@
+import Foto5 from '../../assets/Chatbot.png';
 import Foto1 from '../../assets/ChatIA 2025-11-24 171554.png';
 import Foto3 from '../../assets/FrenteAngular.jpg';
 import Foto4 from '../../assets/FrenteHerramientas.png';
@@ -35,6 +36,16 @@ const proyectos = [
   },
   {
     id: 4,
+    title: 'ChatBot con IA para gestión de reservas',
+    description: 'Chatbot inteligente para gestionar reservas de canchas de fútbol vía Telegram y web. Utiliza DeepSeek con function calling para entender lenguaje natural, validar reglas de negocio y persistir datos en PostgreSQL.'+
+    ' Demo web: https://chat-bot-front-five.vercel.app',
+    tags: ['Java 17', 'Spring Boot','React', 'Docker', 'DeepSeek API', 'Supabase'],
+    image: Foto5,
+    link: 'https://www.linkedin.com/in/joaquin-hevia3704/details/projects/',
+    deploy:'https://t.me/Cancha_futbol_sint_bot',
+  },
+  {
+    id: 5,
     title: 'Frontend de tienda Herramientas-Tandil(En desarrollo)',
     description: 'Tienda online de herramientas diseñada para ofrecer una experiencia de compra rápida, moderna e intuitiva. Los usuarios pueden explorar un catálogo de productos, ver detalles de cada herramienta, buscar por categorías y realizar compras de forma sencilla desde una interfaz responsive y atractiva.',
     tags: ['React', 'Postgresql', 'Vercel', 'Responsive Design.'],

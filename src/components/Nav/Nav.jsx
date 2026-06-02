@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
-import cvFile from '../../assets/CV-Backend.pdf';
+import cvFile from '../../assets/CV-ATS-JoaquinHevia-Backend.pdf';
 const links = [
   { href: '#sobre-mi', label: 'Sobre mí' },
   { href: '#proyectos', label: 'Proyectos' },
   { href: '#tecnologias', label: 'Tecnologías' },
   { href: '#formacion', label: 'Formación' },
+  { href: '#experiencia', label: 'Experiencia' },
   { href: '#contacto', label: 'Contacto' },
 ];
 
@@ -36,7 +37,7 @@ export default function Nav() {
           }
         });
       },
-      { threshold: 0.4 }
+      { threshold: 0.2 }
     );
 
     sections.forEach(s => s && observer.observe(s));
@@ -59,7 +60,7 @@ export default function Nav() {
         ))}
         <li>
             <a href={cvFile}
-            download="CV-Backend.pdf"
+            download="CV-JoaquinHevia-Backend"
             className="nav-cv-btn"
             onClick={() => setMenuOpen(false)}>
              CV ↓  

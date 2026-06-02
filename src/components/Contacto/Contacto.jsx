@@ -25,7 +25,7 @@ const contactos = [
 export default function Contacto() {
   return (
     <section id="contacto" className="section">
-      <div className="section-label">05 — contacto</div>
+      <div className="section-label">06 — contacto</div>
       <h2 className="section-title">Hablemos</h2>
 
       <div className="contact-grid">
