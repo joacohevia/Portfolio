@@ -1,19 +1,22 @@
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import cvFile from '../../assets/CV-ATS-JoaquinHevia-Backend.pdf';
-const links = [
-  { href: '#sobre-mi', label: 'Sobre mí' },
-  { href: '#proyectos', label: 'Proyectos' },
-  { href: '#tecnologias', label: 'Tecnologías' },
-  { href: '#formacion', label: 'Formación' },
-  { href: '#experiencia', label: 'Experiencia' },
-  { href: '#contacto', label: 'Contacto' },
-];
 
 export default function Nav() {
+  const { t, i18n } = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('');
-  //funcion scroll
-    const handleNavClick = (e, href) => {
+
+  const links = [
+    { href: '#sobre-mi', label: t('nav.sobreMi') },
+    { href: '#proyectos', label: t('nav.proyectos') },
+    { href: '#tecnologias', label: t('nav.tecnologias') },
+    { href: '#formacion', label: t('nav.formacion') },
+    { href: '#experiencia', label: t('nav.experiencia') },
+    { href: '#contacto', label: t('nav.contacto') },
+  ];
+
+  const handleNavClick = (e, href) => {
     e.preventDefault();
     setMenuOpen(false);
 
@@ -21,13 +24,15 @@ export default function Nav() {
     if (!target) return;
 
     const navHeight = 1;
-    const extraOffset = 5;//mas abajo le resto
+    const extraOffset = 5;
     const top = target.getBoundingClientRect().top + window.scrollY - navHeight - extraOffset;
 
     window.scrollTo({ top, behavior: 'smooth' });
   };
+
   useEffect(() => {
-    const sections = links.map(l => document.querySelector(l.href));
+    const sectionEls = ['#sobre-mi', '#proyectos', '#tecnologias', '#formacion', '#experiencia', '#contacto']
+      .map(s => document.querySelector(s));
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -40,9 +45,13 @@ export default function Nav() {
       { threshold: 0.2 }
     );
 
-    sections.forEach(s => s && observer.observe(s));
+    sectionEls.forEach(s => s && observer.observe(s));
     return () => observer.disconnect();
   }, []);
+
+  const currentLang = i18n.language;
+  const nextLang = currentLang === 'es' ? 'en' : 'es';
+  const langLabel = currentLang === 'es' ? 'EN' : 'ES';
 
   return (
     <nav className="nav">
@@ -52,19 +61,28 @@ export default function Nav() {
             <a
               href={link.href}
               className={activeSection === link.href ? 'active' : ''}
-              onClick={(e) => handleNavClick(e,link.href)}
+              onClick={(e) => handleNavClick(e, link.href)}
             >
               {link.label}
             </a>
           </li>
         ))}
         <li>
-            <a href={cvFile}
+          <a href={cvFile}
             download="CV-JoaquinHevia-Backend"
             className="nav-cv-btn"
             onClick={() => setMenuOpen(false)}>
-             CV ↓  
-            </a>
+            {t('nav.cv')}
+          </a>
+        </li>
+        <li>
+          <button
+            className="lang-switch"
+            onClick={() => i18n.changeLanguage(nextLang)}
+            aria-label={`Switch to ${nextLang === 'en' ? 'English' : 'Spanish'}`}
+          >
+            {langLabel}
+          </button>
         </li>
       </ul>
 

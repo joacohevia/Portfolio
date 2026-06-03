@@ -1,10 +1,14 @@
-export default function ProjectCard({ title, description, tags, image, link, deploy }) {
+import { useTranslation } from 'react-i18next';
+
+export default function ProjectCard({ title, description, tags, image, link, deploys }) {
+  const { t } = useTranslation();
+
   return (
-    <div className="project-card" onClick={() => link && window.open(link, '_blank')}>
+    <div className="project-card" onClick={() => link && link !== t('projectCard.inDevelopment') && window.open(link, '_blank')}>
       <div className="project-img">
         {image
           ? <img src={image} alt={title} />
-          : <span className="project-img-placeholder">[ captura del proyecto ]</span>
+          : <span className="project-img-placeholder">{t('projectCard.placeholder')}</span>
         }
       </div>
       <div className="project-body">
@@ -15,18 +19,21 @@ export default function ProjectCard({ title, description, tags, image, link, dep
             <span key={tag} className="tech-tag">{tag}</span>
           ))}
         </div>
-        {/* 👇 Link de deploy: solo se renderiza si existe el prop */}
-        {deploy && (
-          <a 
-            href={deploy} 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="deploy-link"   
+
+        {/* Múltiples botones de deploy: cada uno con su propio link y label traducible.
+            Solo se renderizan si el array deploys tiene al menos una entrada. */}
+        {deploys && deploys.length > 0 && deploys.map((d, i) => (
+          <a
+            key={i}
+            href={d.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="deploy-link"
             onClick={(e) => e.stopPropagation()}
           >
-            Ver demo →
+            {t(d.labelKey)}
           </a>
-        )}
+        ))}
       </div>
     </div>
   );

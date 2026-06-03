@@ -1,0 +1,140 @@
+{
+  "nav": {
+    "sobreMi": "About Me",
+    "proyectos": "Projects",
+    "tecnologias": "Technologies",
+    "formacion": "Education",
+    "experiencia": "Experience",
+    "contacto": "Contact",
+    "cv": "CV ↓"
+  },
+  "hero": {
+    "subtitle": "Backend Developer | Java · Spring Boot · PHP · REST APIs · SQL | Full Stack · React · Angular",
+    "descriptionPart1": "I build backend systems and connect them with clean interfaces. Java, Spring Boot, and PHP on the server side, React and Angular on the client side, all with a focus on ",
+    "descriptionStrong": "architecture and scalability."
+  },
+  "sobreMi": {
+    "label": "01 — about me",
+    "title": "Who am I?",
+    "cards": {
+      "presentacion": {
+        "title": "About",
+        "textPart1": "I am a",
+        "textStrong": " backend developer ",
+        "textPart2": "with a full stack approach. I specialize in designing scalable architectures, modeling databases, and building secure, well-documented APIs with Java, Spring Boot, and PHP. I use Docker, Postman, and Swagger as a core part of my workflow to develop, test, and document services. My frontend experience with React and Angular, combined with UX/UI design in Figma, allows me to think end-to-end solutions — understanding both server logic and user experience."
+      },
+      "perfil": {
+        "title": "Profile",
+        "text": "I solve complex problems with well-structured solutions. I enjoy working in teams, making informed technical decisions, and continuously learning. Growing in IT, project by project."
+      }
+    }
+  },
+  "proyectos": {
+    "label": "02 — projects",
+    "title": "What I've built",
+    "items": [
+      {
+        "id": 1,
+        "title": "API built with Java",
+        "description": "This collaborative project consists of developing an API for managing an electric scooter system, designed with a microservices architecture. The main goal is to deliver a scalable and modular solution that enables efficient management of the different system components, facilitating maintenance and evolution."
+      },
+      {
+        "id": 2,
+        "title": "REST API Clothing Store",
+        "description": "Development of a REST API in PHP for product management in a clothing store. The application is structured using the MVC (Model-View-Controller) architectural pattern, allowing a clear separation of concerns between business logic, data access, and route/controller management."
+      },
+      {
+        "id": 3,
+        "title": "Clothing store frontend with Angular",
+        "description": "Development of a clothing application where customers can register, choose products by color and size, view the total, and complete their order via WhatsApp."
+      },
+      {
+        "id": 4,
+        "title": "AI ChatBot for reservation management",
+        "description": "Intelligent chatbot for managing soccer field reservations via Telegram and web. It uses DeepSeek with function calling to understand natural language, validate business rules, and persist data in PostgreSQL. Web demo: https://chat-bot-front-five.vercel.app"
+      },
+      {
+        "id": 5,
+        "title": "Herramientas-Tandil store frontend (In development)",
+        "description": "Online tool store designed to offer a fast, modern, and intuitive shopping experience. Users can browse a product catalog, view details of each tool, search by categories, and make purchases easily from a responsive and attractive interface."
+      }
+    ]
+  },
+  "projectCard": {
+    "placeholder": "[ project screenshot ]",
+    "inDevelopment": "In development",
+    "deployLabels": {
+      "webDemo": "Web demo →",
+      "telegram": "Telegram Bot"
+    }
+  },
+  "tecnologias": {
+    "label": "03 — technologies",
+    "title": "My stack",
+    "groups": {
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "tools": "Tools & Methodologies"
+    }
+  },
+  "formacion": {
+    "label": "04 — education",
+    "title": "Education & certifications",
+    "items": [
+      {
+        "id": 1,
+        "fecha": "2023 — in progress",
+        "titulo": "University Technician in Computer Application Development (TUDAI)",
+        "lugar": "National University of Central Buenos Aires Province (UNICEN)"
+      }
+    ]
+  },
+  "experiencia": {
+    "label": "05 — experience",
+    "title": "Work experience",
+    "items": [
+      {
+        "id": 1,
+        "fecha": "2022 – Present",
+        "titulo": "Independent work",
+        "lugar": "Freelance",
+        "descripcion": "I provide independent work and services for various clients, both in technical/IT areas and in operational tasks related to gardening, construction, electrical work, and carpentry."
+      },
+      {
+        "id": 2,
+        "fecha": "Mar 2021 – Mar 2022",
+        "titulo": "Gardening & maintenance worker",
+        "lugar": "Private services",
+        "descripcion": "I gained experience in machinery maintenance and gardening/pruning tasks for various contractors. I developed autonomy, responsibility, and organizational skills in daily work, performing in dynamic and goal-oriented environments."
+      },
+      {
+        "id": 3,
+        "fecha": "Apr 2019 - Dec 2020",
+        "titulo": "Volunteer soldier",
+        "lugar": "Argentine Army - First Armored Brigade",
+        "descripcion": "I developed skills in discipline, teamwork, organization, and problem solving, fulfilling operational responsibilities and adapting to different challenges with commitment and responsibility."
+      }
+    ]
+  },
+  "contacto": {
+    "label": "06 — contact",
+    "title": "Let's talk",
+    "items": [
+      {
+        "id": "email",
+        "label": "EMAIL",
+        "value": "joaco.r.hevia@gmail.com"
+      },
+      {
+        "id": "linkedin",
+        "label": "LINKEDIN",
+        "value": "Joaquin Hevia"
+      },
+      {
+        "id": "github",
+        "label": "GITHUB",
+        "value": "Joaco Hevia"
+      }
+    ]
+  }
+}

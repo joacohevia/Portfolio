@@ -100,6 +100,43 @@ body {
   transition: all 0.3s;
 }
 
+.lang-switch {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--muted);
+  background: transparent;
+  border: 0.5px solid var(--border);
+  border-radius: 4px;
+  padding: 4px 10px;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  transition: all 0.2s;
+}
+
+.lang-switch:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: rgba(0, 212, 170, 0.06);
+}
+
+.nav-cv-btn {
+  font-family: var(--mono);
+  font-size: 16px;
+  color: var(--accent);
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 0.5px solid var(--accent);
+  transition: all 0.2s;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: rgba(0, 212, 170, 0.08);
+}
+
+.nav-cv-btn:hover {
+  background: rgba(0, 212, 170, 0.18);
+}
+
 /* ===========================
    SECCIONES - BASE
 =========================== */

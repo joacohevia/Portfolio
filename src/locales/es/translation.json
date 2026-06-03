@@ -1,0 +1,140 @@
+{
+  "nav": {
+    "sobreMi": "Sobre mí",
+    "proyectos": "Proyectos",
+    "tecnologias": "Tecnologías",
+    "formacion": "Formación",
+    "experiencia": "Experiencia",
+    "contacto": "Contacto",
+    "cv": "CV ↓"
+  },
+  "hero": {
+    "subtitle": "Backend Developer | Java · Spring Boot · PHP · APIs REST · SQL | Full Stack · React · Angular",
+    "descriptionPart1": "Desarrollo sistemas backend y los conecto con interfaces limpias. Java, Spring Boot, y PHP en el servidor, React y Angular en el cliente, todo con foco en ",
+    "descriptionStrong": "arquitectura y escalabilidad."
+  },
+  "sobreMi": {
+    "label": "01 — sobre mí",
+    "title": "¿Quién soy?",
+    "cards": {
+      "presentacion": {
+        "title": "Presentación",
+        "textPart1": "Soy",
+        "textStrong": " desarrollador backend ",
+        "textPart2": "con enfoque full stack. Me especializo en diseñar arquitecturas escalables, modelar bases de datos y construir APIs seguras y bien documentadas con Java, Spring Boot y PHP. Utilizo Docker, Postman y Swagger como parte central de mi flujo de trabajo para desarrollar, testear y documentar servicios. Mi experiencia en frontend con React y Angular, sumada al diseño UX/UI en Figma, me permite pensar soluciones de punta a punta — entendiendo tanto la lógica del servidor como la experiencia del usuario."
+      },
+      "perfil": {
+        "title": "Perfil",
+        "text": "Resuelvo problemas complejos con soluciones bien estructuradas. Disfruto trabajar en equipo, tomar decisiones técnicas con criterio y seguir aprendiendo. Creciendo en IT, proyecto a proyecto."
+      }
+    }
+  },
+  "proyectos": {
+    "label": "02 — proyectos",
+    "title": "Lo que construí",
+    "items": [
+      {
+        "id": 1,
+        "title": "API realizada con Java",
+        "description": "Este proyecto colaborativo consiste en el desarrollo de una API orientada a la gestión de un sistema de monopatines eléctricos, diseñada bajo una arquitectura de microservicios. El objetivo principal es ofrecer una solución escalable y modular que permita administrar de forma eficiente los distintos componentes del sistema, facilitando su mantenimiento y evolución."
+      },
+      {
+        "id": 2,
+        "title": "API REST Tienda de Indumentaria",
+        "description": "Desarrollo de una API REST en PHP orientada a la gestión de productos para una tienda de indumentaria. La aplicación está estructurada bajo el patrón de arquitectura MVC (Model-View-Controller), permitiendo una clara separación de responsabilidades entre la lógica de negocio, el acceso a datos y la gestión de rutas/controladores."
+      },
+      {
+        "id": 3,
+        "title": "Frontend de tienda de ropa con Angular",
+        "description": "Desarrollo de una aplicación de indumentaria donde los clientes pueden registrarse, elegir productos por color y talle, ver el total y concretar el pedido por WhatsApp."
+      },
+      {
+        "id": 4,
+        "title": "ChatBot con IA para gestión de reservas",
+        "description": "Chatbot inteligente para gestionar reservas de canchas de fútbol vía Telegram y web. Utiliza DeepSeek con function calling para entender lenguaje natural, validar reglas de negocio y persistir datos en PostgreSQL. Demo web: https://chat-bot-front-five.vercel.app"
+      },
+      {
+        "id": 5,
+        "title": "Frontend de tienda Herramientas-Tandil (En desarrollo)",
+        "description": "Tienda online de herramientas diseñada para ofrecer una experiencia de compra rápida, moderna e intuitiva. Los usuarios pueden explorar un catálogo de productos, ver detalles de cada herramienta, buscar por categorías y realizar compras de forma sencilla desde una interfaz responsive y atractiva."
+      }
+    ]
+  },
+  "projectCard": {
+    "placeholder": "[ captura del proyecto ]",
+    "inDevelopment": "En desarrollo",
+    "deployLabels": {
+      "webDemo": "Demo web →",
+      "telegram": "Bot Telegram"
+    }
+  },
+  "tecnologias": {
+    "label": "03 — tecnologías",
+    "title": "Mi stack",
+    "groups": {
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "tools": "Herramientas y Metodologías"
+    }
+  },
+  "formacion": {
+    "label": "04 — formación",
+    "title": "Estudios y certificaciones",
+    "items": [
+      {
+        "id": 1,
+        "fecha": "2023 — en curso",
+        "titulo": "Tecnicatura Universitaria en Desarrollo de Aplicaciones Informáticas (TUDAI)",
+        "lugar": "Universidad Nacional del Centro de la Provincia de Buenos Aires (UNICEN)"
+      }
+    ]
+  },
+  "experiencia": {
+    "label": "05 — experiencia",
+    "title": "Experiencia laboral",
+    "items": [
+      {
+        "id": 1,
+        "fecha": "2022 – Actualidad",
+        "titulo": "Trabajos independientes",
+        "lugar": "Freelance",
+        "descripcion": "Realizo trabajos y servicios independientes para distintos clientes, tanto en áreas técnicas e IT como en tareas operativas vinculadas a jardinería, construcción, electricidad, carpintería."
+      },
+      {
+        "id": 2,
+        "fecha": "Mar 2021 – Mar 2022",
+        "titulo": "Empleado de jardinería y mantenimiento",
+        "lugar": "Servicios particulares",
+        "descripcion": "Adquirí experiencia en mantenimiento de maquinaria y ejecución de tareas de jardinería y poda para distintos contratistas. Desarrollé autonomía, responsabilidad y capacidad de organización en el trabajo diario, desempeñándome en entornos dinámicos y orientados al cumplimiento de objetivos."
+      },
+      {
+        "id": 3,
+        "fecha": "Abr 2019 - Dic 2020",
+        "titulo": "Soldado voluntario",
+        "lugar": "Ejercito Argentino - Primera Brigada Blindada",
+        "descripcion": "Desarrollé habilidades de disciplina, trabajo en equipo, organización y resolución de problemas, cumpliendo responsabilidades operativas y adaptándome a distintos desafíos con compromiso y responsabilidad."
+      }
+    ]
+  },
+  "contacto": {
+    "label": "06 — contacto",
+    "title": "Hablemos",
+    "items": [
+      {
+        "id": "email",
+        "label": "EMAIL",
+        "value": "joaco.r.hevia@gmail.com"
+      },
+      {
+        "id": "linkedin",
+        "label": "LINKEDIN",
+        "value": "Joaquin Hevia"
+      },
+      {
+        "id": "github",
+        "label": "GITHUB",
+        "value": "Joaco Hevia"
+      }
+    ]
+  }
+}

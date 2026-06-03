@@ -1,69 +1,73 @@
+import { useTranslation } from 'react-i18next';
 import Foto5 from '../../assets/Chatbot.png';
 import Foto1 from '../../assets/ChatIA 2025-11-24 171554.png';
 import Foto3 from '../../assets/FrenteAngular.jpg';
 import Foto4 from '../../assets/FrenteHerramientas.png';
 import Foto2 from '../../assets/PostSwagAPI.png';
 import ProjectCard from './ProjectCard';
-// Editá este array para agregar tus proyectos reales
-const proyectos = [
-  {
-    id: 1,
-    title: 'API realizada con Java',
-    description: 'Este proyecto colaborativo consiste en el desarrollo de una API orientada a la gestión de un sistema de monopatines eléctricos, diseñada bajo una arquitectura de microservicios. El objetivo principal es ofrecer una solución escalable y modular que permita administrar de forma eficiente los distintos componentes del sistema, facilitando su mantenimiento y evolución.',
-    tags: ['PostgreSQL','Docker','JPA','Spring Boot'],
-    image: Foto1,
-    link: 'https://www.linkedin.com/in/joaquin-hevia3704/details/projects/',
-    deploy:'' 
-  },
-  {
-    id: 2,
-    title: 'API REST Tienda de Indumentaria',
-    description: 'Desarrollo de una API REST en PHP orientada a la gestión de productos para una tienda de indumentaria.' + 
-    'La aplicación está estructurada bajo el patrón de arquitectura MVC (Model-View-Controller), permitiendo una clara separación de responsabilidades entre la lógica de negocio, el acceso a datos y la gestión de rutas/controladores.',
-    tags: ['MySQL', 'JWT', 'Postman', 'PHP','Docker','Swagger'],
-    image: Foto2,
-    link: 'https://www.linkedin.com/in/joaquin-hevia3704/details/projects/',
-    deploy: ''
-  },
-  {
-    id: 3,
-    title: 'Frontend de tienda de ropa con Angular',
-    description: 'Desarrollo de una aplicación de indumentaria donde los clientes pueden registrarse, elegir productos por color y talle, ver el total y concretar el pedido por WhatsApp.',
-    tags: ['Angular', 'TypeScript', 'API REST', 'MySQL', 'Railway', 'Vercel', 'Responsive Design.'],
-    image: Foto3,
-    link: 'https://www.linkedin.com/in/joaquin-hevia3704/details/projects/',
-    deploy: 'https://tienda-front-three.vercel.app/productos'
-  },
-  {
-    id: 4,
-    title: 'ChatBot con IA para gestión de reservas',
-    description: 'Chatbot inteligente para gestionar reservas de canchas de fútbol vía Telegram y web. Utiliza DeepSeek con function calling para entender lenguaje natural, validar reglas de negocio y persistir datos en PostgreSQL.'+
-    ' Demo web: https://chat-bot-front-five.vercel.app',
-    tags: ['Java 17', 'Spring Boot','React', 'Docker', 'DeepSeek API', 'Supabase'],
-    image: Foto5,
-    link: 'https://www.linkedin.com/in/joaquin-hevia3704/details/projects/',
-    deploy:'https://t.me/Cancha_futbol_sint_bot',
-  },
-  {
-    id: 5,
-    title: 'Frontend de tienda Herramientas-Tandil(En desarrollo)',
-    description: 'Tienda online de herramientas diseñada para ofrecer una experiencia de compra rápida, moderna e intuitiva. Los usuarios pueden explorar un catálogo de productos, ver detalles de cada herramienta, buscar por categorías y realizar compras de forma sencilla desde una interfaz responsive y atractiva.',
-    tags: ['React', 'Postgresql', 'Vercel', 'Responsive Design.'],
-    image: Foto4,
-    link: 'En desarrollo',
-    deploy:''
-  }
+
+const projectImages = {
+  1: Foto1,
+  2: Foto2,
+  3: Foto3,
+  4: Foto5,
+  5: Foto4,
+};
+
+const projectLinks = [
+  'https://www.linkedin.com/in/joaquin-hevia3704/details/projects/',
+  'https://www.linkedin.com/in/joaquin-hevia3704/details/projects/',
+  'https://www.linkedin.com/in/joaquin-hevia3704/details/projects/',
+  'https://www.linkedin.com/in/joaquin-hevia3704/details/projects/',
+  'En desarrollo',
+];
+
+/*
+  Deploys: cada proyecto puede tener 0, 1 o N botones de deploy.
+  Cada entry es { url, labelKey } donde labelKey apunta a projectCard.deployLabels.* en los JSON de traducción.
+  Si el array está vacío, no se renderiza ningún botón.
+*/
+const projectDeploys = [
+  [], // 1. API Java — sin deploy público
+  [], // 2. API PHP — sin deploy público
+  [
+    { url: 'https://tienda-front-three.vercel.app/productos', labelKey: 'projectCard.deployLabels.webDemo' }
+  ], // 3. Tienda Angular — demo web en Vercel
+  [
+    { url: 'https://t.me/Cancha_futbol_sint_bot', labelKey: 'projectCard.deployLabels.telegram' },
+    { url: 'https://chat-bot-front-five.vercel.app', labelKey: 'projectCard.deployLabels.webDemo' }
+  ], // 4. ChatBot IA — bot de Telegram + demo web en Vercel
+  [], // 5. Herramientas-Tandil — en desarrollo, sin deploy aún
+];
+
+const projectTags = [
+  ['PostgreSQL', 'Docker', 'JPA', 'Spring Boot'],
+  ['MySQL', 'JWT', 'Postman', 'PHP', 'Docker', 'Swagger'],
+  ['Angular', 'TypeScript', 'API REST', 'MySQL', 'Railway', 'Vercel', 'Responsive Design.'],
+  ['Java 17', 'Spring Boot', 'React', 'Docker', 'DeepSeek API', 'Supabase'],
+  ['React', 'Postgresql', 'Vercel', 'Responsive Design.'],
 ];
 
 export default function Proyectos() {
+  const { t } = useTranslation();
+  const proyectos = t('proyectos.items', { returnObjects: true });
+
   return (
     <section id="proyectos" className="section">
-      <div className="section-label">02 — proyectos</div>
-      <h2 className="section-title">Lo que construí</h2>
+      <div className="section-label">{t('proyectos.label')}</div>
+      <h2 className="section-title">{t('proyectos.title')}</h2>
 
       <div className="projects-grid">
-        {proyectos.map(proyecto => (
-          <ProjectCard key={proyecto.id} {...proyecto} />
+        {proyectos.map((proyecto, index) => (
+          <ProjectCard
+            key={proyecto.id}
+            title={proyecto.title}
+            description={proyecto.description}
+            tags={projectTags[index]}
+            image={projectImages[proyecto.id]}
+            link={projectLinks[index]}
+            deploys={projectDeploys[index]}
+          />
         ))}
       </div>
     </section>

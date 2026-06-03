@@ -1,6 +1,8 @@
+import { useTranslation } from 'react-i18next';
+
 const grupos = [
   {
-    label: 'Backend',
+    labelKey: 'tecnologias.groups.backend',
     techs: [
       { nombre: 'Java', color: '#f89820' },
       { nombre: 'Spring Boot', color: '#6db33f' },
@@ -13,7 +15,7 @@ const grupos = [
     ],
   },
   {
-    label: 'Frontend',
+    labelKey: 'tecnologias.groups.frontend',
     techs: [
       { nombre: 'Html', color: '#e34f26' },
       { nombre: 'Css', color: '#1572b6' },
@@ -24,7 +26,7 @@ const grupos = [
     ],
   },
   {
-    label: 'Herramientas y Metodologías',
+    labelKey: 'tecnologias.groups.tools',
     techs: [
       { nombre: 'Postman', color: '#ff6c37' },
       { nombre: 'Swagger', color: '#85ea2d' },
@@ -36,14 +38,16 @@ const grupos = [
 ];
 
 export default function Tecnologias() {
+  const { t } = useTranslation();
+
   return (
     <section id="tecnologias" className="section">
-      <div className="section-label">03 — tecnologías</div>
-      <h2 className="section-title">Mi stack</h2>
+      <div className="section-label">{t('tecnologias.label')}</div>
+      <h2 className="section-title">{t('tecnologias.title')}</h2>
 
       {grupos.map(grupo => (
-        <div key={grupo.label} className="tech-group">
-          <div className="tech-group-label">{grupo.label}</div>
+        <div key={grupo.labelKey} className="tech-group">
+          <div className="tech-group-label">{t(grupo.labelKey)}</div>
           <div className="tech-pills">
             {grupo.techs.map(tech => (
               <div key={tech.nombre} className="tech-pill">
