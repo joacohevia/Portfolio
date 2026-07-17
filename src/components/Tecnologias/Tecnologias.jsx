@@ -12,6 +12,7 @@ const grupos = [
       { nombre: 'MySQL', color: '#4479a1' },
       { nombre: 'Microservicios', color: '#00d4aa' },
       { nombre: 'Docker', color: '#2496ed' },
+      { nombre: 'n8n', color: '#336791'},
     ],
   },
   {
