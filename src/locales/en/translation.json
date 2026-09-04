@@ -9,8 +9,8 @@
     "cv": "CV ↓"
   },
   "hero": {
-    "subtitle": "Backend Developer | Java · Spring Boot · PHP · REST APIs · SQL | Full Stack · React · Angular",
-    "descriptionPart1": "I build backend systems and connect them with clean interfaces. Java, Spring Boot, and PHP on the server side, React and Angular on the client side, all with a focus on ",
+    "subtitle": "Full Stack Developer | React · Node.js · Java · Spring Boot | AI Integration",
+    "descriptionPart1": "I build end-to-end web applications, connecting a robust backend with clean, functional interfaces. I work with React, Node.js, Express, and Java (Spring Boot), incorporating AI tools to optimize processes, with a focus on ",
     "descriptionStrong": "architecture and scalability."
   },
   "sobreMi": {
@@ -20,8 +20,8 @@
       "presentacion": {
         "title": "About",
         "textPart1": "I am a",
-        "textStrong": " backend developer ",
-        "textPart2": "with a full stack approach. I specialize in designing scalable architectures, modeling databases, and building secure, well-documented APIs with Java, Spring Boot, and PHP. I use Docker, Postman, and Swagger as a core part of my workflow to develop, test, and document services. My frontend experience with React and Angular, combined with UX/UI design in Figma, allows me to think end-to-end solutions — understanding both server logic and user experience."
+        "textStrong": " Full Stack Developer ",
+        "textPart2": "and a University Technician in Computer Application Development. I have experience transforming real ideas and needs into functional web applications, handling end-to-end development: frontend, backend, APIs, and databases. I work mainly with React, Node.js, Express, Java (Spring Boot), and Supabase, and I also incorporate Artificial Intelligence tools to automate processes, improve the way I develop, and create more efficient solutions."
       },
       "perfil": {
         "title": "Profile",
@@ -52,11 +52,6 @@
         "id": 4,
         "title": "AI ChatBot for reservation management",
         "description": "Intelligent chatbot for managing soccer field reservations via Telegram and web. It uses DeepSeek with function calling to understand natural language, validate business rules, and persist data in PostgreSQL. Web demo: https://chat-bot-front-five.vercel.app"
-      },
-      {
-        "id": 5,
-        "title": "Herramientas-Tandil store frontend (In development)",
-        "description": "Online tool store designed to offer a fast, modern, and intuitive shopping experience. Users can browse a product catalog, view details of each tool, search by categories, and make purchases easily from a responsive and attractive interface."
       }
     ]
   },
@@ -74,13 +69,26 @@
     "groups": {
       "backend": "Backend",
       "frontend": "Frontend",
-      "tools": "Tools & Methodologies"
+      "tools": "Tools & Methodologies",
+      "IA & Automatización": "AI Tools"
     }
   },
   "formacion": {
     "label": "04 — education",
     "title": "Education & certifications",
     "items": [
+      {
+        "id": 3,
+        "fecha": "Jun 2026 — Aug 2026",
+        "titulo": "Developer Boost 2.0",
+        "lugar": "Cluster Tecnológico Tandil"
+      },
+      {
+        "id": 2,
+        "fecha": "Mar 2026 — Mar 2026",
+        "titulo": "AI Development: From 0 to Production",
+        "lugar": "BIG School"
+      },
       {
         "id": 1,
         "fecha": "2023 — in progress",
@@ -94,8 +102,22 @@
     "title": "Work experience",
     "items": [
       {
+        "id": 4,
+        "fecha": "Jul 2026 – Sep 2026",
+        "titulo": "Full Stack Developer",
+        "lugar": "Custom e-commerce (freelance project) · Independent professional",
+        "descripcion": "Development and maintenance of a custom e-commerce platform for a tool retail business, as a freelance project."
+      },
+      {
+        "id": 5,
+        "fecha": "May 2026 – Aug 2026",
+        "titulo": "Software sales",
+        "lugar": "Serra AI · Independent professional",
+        "descripcion": "In this role I grew in consultative software sales for the healthcare sector, learning to identify the needs of professionals and medical centers to offer solutions aligned with their work processes."
+      },
+      {
         "id": 1,
-        "fecha": "2022 – Present",
+        "fecha": "2022 – 2026",
         "titulo": "Independent work",
         "lugar": "Freelance",
         "descripcion": "I provide independent work and services for various clients, both in technical/IT areas and in operational tasks related to gardening, construction, electrical work, and carpentry."

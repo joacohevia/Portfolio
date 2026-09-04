@@ -9,8 +9,8 @@
     "cv": "CV ↓"
   },
   "hero": {
-    "subtitle": "Backend Developer | Java · Spring Boot · PHP · APIs REST · SQL | Full Stack · React · Angular",
-    "descriptionPart1": "Desarrollo sistemas backend y los conecto con interfaces limpias. Java, Spring Boot, y PHP en el servidor, React y Angular en el cliente, todo con foco en ",
+    "subtitle": "Desarrollador Full Stack | React · Node.js · Java · Spring Boot | Integración de IA",
+    "descriptionPart1": "Desarrollo aplicaciones web de punta a punta, conectando un backend robusto con interfaces limpias y funcionales. Trabajo con React, Node.js, Express y Java (Spring Boot), incorporando herramientas de IA para optimizar procesos, con foco en ",
     "descriptionStrong": "arquitectura y escalabilidad."
   },
   "sobreMi": {
@@ -20,8 +20,8 @@
       "presentacion": {
         "title": "Presentación",
         "textPart1": "Soy",
-        "textStrong": " desarrollador backend ",
-        "textPart2": "con enfoque full stack. Me especializo en diseñar arquitecturas escalables, modelar bases de datos y construir APIs seguras y bien documentadas con Java, Spring Boot y PHP. Utilizo Docker, Postman y Swagger como parte central de mi flujo de trabajo para desarrollar, testear y documentar servicios. Mi experiencia en frontend con React y Angular, sumada al diseño UX/UI en Figma, me permite pensar soluciones de punta a punta — entendiendo tanto la lógica del servidor como la experiencia del usuario."
+        "textStrong": " Desarrollador Full Stack ",
+        "textPart2": "y Técnico Universitario en Desarrollo de Aplicaciones Informáticas. Cuento con experiencia  en transformar ideas y necesidades reales en aplicaciones web funcionales, ocupándome del desarrollo de punta a punta: frontend, backend, APIs y bases de datos. Trabajo principalmente con React, Node.js, Express, Java (Spring Boot) y Supabase, y también incorporo herramientas de Inteligencia Artificial para automatizar procesos, mejorar mi forma de desarrollar y crear soluciones más eficientes."
       },
       "perfil": {
         "title": "Perfil",
@@ -52,11 +52,6 @@
         "id": 4,
         "title": "ChatBot con IA para gestión de reservas",
         "description": "Chatbot inteligente para gestionar reservas de canchas de fútbol vía Telegram y web. Utiliza DeepSeek con function calling para entender lenguaje natural, validar reglas de negocio y persistir datos en PostgreSQL. Demo web: https://chat-bot-front-five.vercel.app"
-      },
-      {
-        "id": 5,
-        "title": "Frontend de tienda Herramientas-Tandil (En desarrollo)",
-        "description": "Tienda online de herramientas diseñada para ofrecer una experiencia de compra rápida, moderna e intuitiva. Los usuarios pueden explorar un catálogo de productos, ver detalles de cada herramienta, buscar por categorías y realizar compras de forma sencilla desde una interfaz responsive y atractiva."
       }
     ]
   },
@@ -74,13 +69,26 @@
     "groups": {
       "backend": "Backend",
       "frontend": "Frontend",
-      "tools": "Herramientas y Metodologías"
+      "tools": "Herramientas y Metodologías",
+      "IA & Automatización": "Herramientas IA"
     }
   },
   "formacion": {
     "label": "04 — formación",
     "title": "Estudios y certificaciones",
     "items": [
+      {
+        "id": 3,
+        "fecha": "Jun 2026 — Ago 2026",
+        "titulo": "Developer Boost 2.0",
+        "lugar": "Cluster Tecnológico Tandil"
+      },
+      {
+        "id": 2,
+        "fecha": "Mar 2026 — Mar 2026",
+        "titulo": "Desarrollo con IA: de 0 a Producción",
+        "lugar": "BIG School"
+      },
       {
         "id": 1,
         "fecha": "2023 — en curso",
@@ -94,8 +102,22 @@
     "title": "Experiencia laboral",
     "items": [
       {
+        "id": 4,
+        "fecha": "Jul 2026 – Sep 2026",
+        "titulo": "Desarrollador Full Stack",
+        "lugar": "E-commerce a medida (proyecto freelance) · Profesional independiente",
+        "descripcion": "Desarrollo y mantenimiento de una plataforma e-commerce a medida para un comercio de venta de herramientas, como proyecto freelance."
+      },
+      {
+        "id": 5,
+        "fecha": "May 2026 – Ago 2026",
+        "titulo": "Ventas de software",
+        "lugar": "Serra AI · Profesional independiente",
+        "descripcion": "Durante esta experiencia me desarrollé en la venta consultiva de software para el sector de la salud, aprendiendo a identificar las necesidades de profesionales y centros médicos para ofrecer soluciones alineadas con sus procesos de trabajo."
+      },
+      {
         "id": 1,
-        "fecha": "2022 – Actualidad",
+        "fecha": "2022 – 2026",
         "titulo": "Trabajos independientes",
         "lugar": "Freelance",
         "descripcion": "Realizo trabajos y servicios independientes para distintos clientes, tanto en áreas técnicas e IT como en tareas operativas vinculadas a jardinería, construcción, electricidad, carpintería."

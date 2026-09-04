@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import cvFile from '../../assets/CV-ATS-JoaquinHevia-Backend.pdf';
+import cvFile from '../../assets/CV_Joaquin_Hevia_Desarrollador_Full_Stack.pdf';
 
 export default function Nav() {
   const { t, i18n } = useTranslation();
@@ -69,7 +69,7 @@ export default function Nav() {
         ))}
         <li>
           <a href={cvFile}
-            download="CV-JoaquinHevia-Backend"
+            download="CV_Joaquin_Hevia_Desarrollador_Full_Stack"
             className="nav-cv-btn"
             onClick={() => setMenuOpen(false)}>
             {t('nav.cv')}

@@ -36,6 +36,16 @@ const grupos = [
       { nombre: 'Scrum', color: '#00d4aa' },
     ],
   },
+  {
+    labelKey: 'tecnologias.groups.IA & Automatización',
+    techs: [
+      { nombre: 'Integración de LLMs', color: '#ff6c37' },
+      { nombre: 'Prompt Engineering', color: '#85ea2d' },
+      { nombre: 'MCP', color: '#f24e1e' },
+      { nombre: 'RAG', color: '#f05032' },
+      { nombre: 'AI Workflows', color: '#00d4aa' },
+    ],
+  },
 ];
 
 export default function Tecnologias() {
