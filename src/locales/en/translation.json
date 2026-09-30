@@ -1,162 +1,151 @@
 {
   "nav": {
     "sobreMi": "About Me",
-    "proyectos": "Projects",
-    "tecnologias": "Technologies",
-    "formacion": "Education",
     "experiencia": "Experience",
+    "habilidades": "Skills",
+    "proyectos": "Projects",
+    "formacion": "Education",
     "contacto": "Contact",
-    "cv": "CV ↓"
+    "cv": "CV ↓",
+    "switchLang": "Switch language"
   },
   "hero": {
-    "subtitle": "Full Stack Developer | React · Node.js · Java · Spring Boot | AI Integration",
-    "descriptionPart1": "I build end-to-end web applications, connecting a robust backend with clean, functional interfaces. I work with React, Node.js, Express, and Java (Spring Boot), incorporating AI tools to optimize processes, with a focus on ",
-    "descriptionStrong": "architecture and scalability."
+    "greeting": "Hi, I'm",
+    "subtitle": "Software Developer & Fullstack Engineer",
+    "description": {
+      "p1": "I build end-to-end web applications, connecting a robust backend with clean, functional interfaces. Incorporating AI tools to optimize processes, with a focus on ",
+      "strong": "architecture and scalability."
+    },
+    "verProyectos": "View Projects",
+    "contacto": "Contact",
+    "stats": {
+      "experience": "Years of experience",
+      "projects": "Projects completed",
+      "technologies": "Technologies mastered"
+    }
   },
   "sobreMi": {
-    "label": "01 — about me",
-    "title": "Who am I?",
-    "cards": {
-      "presentacion": {
-        "title": "About",
-        "textPart1": "I am a",
-        "textStrong": " Full Stack Developer ",
-        "textPart2": "and a University Technician in Computer Application Development. I have experience transforming real ideas and needs into functional web applications, handling end-to-end development: frontend, backend, APIs, and databases. I work mainly with React, Node.js, Express, Java (Spring Boot), and Supabase, and I also incorporate Artificial Intelligence tools to automate processes, improve the way I develop, and create more efficient solutions."
-      },
-      "perfil": {
-        "title": "Profile",
-        "text": "I solve complex problems with well-structured solutions. I enjoy working in teams, making informed technical decisions, and continuously learning. Growing in IT, project by project."
-      }
+    "title": "Behind the Code",
+    "presentacion": {
+      "p1": "I am a ",
+      "strong": "Full Stack Developer",
+      "p2": " and a University Technician in Computer Application Development. I have experience transforming real ideas and needs into functional web applications, handling end-to-end development: frontend, backend, APIs, and databases. I work mainly with React, Node.js, Express, Java (Spring Boot), and Supabase, and I also incorporate Artificial Intelligence tools to automate processes, improve the way I develop, and create more efficient solutions."
+    },
+    "perfil": {
+      "text": "I am passionate about integrating Artificial Intelligence into real workflows to enhance automation and user experience. ",
+      "strong": "I combine technical rigor with agile methodologies to deliver quality software in each sprint."
     }
   },
-  "proyectos": {
-    "label": "02 — projects",
-    "title": "What I've built",
-    "items": [
-      {
-        "id": 1,
-        "title": "API built with Java",
-        "description": "This collaborative project consists of developing an API for managing an electric scooter system, designed with a microservices architecture. The main goal is to deliver a scalable and modular solution that enables efficient management of the different system components, facilitating maintenance and evolution."
-      },
-      {
-        "id": 2,
-        "title": "REST API Clothing Store",
-        "description": "Development of a REST API in PHP for product management in a clothing store. The application is structured using the MVC (Model-View-Controller) architectural pattern, allowing a clear separation of concerns between business logic, data access, and route/controller management."
-      },
-      {
-        "id": 3,
-        "title": "Clothing store frontend with Angular",
-        "description": "Development of a clothing application where customers can register, choose products by color and size, view the total, and complete their order via WhatsApp."
-      },
-      {
-        "id": 4,
-        "title": "AI ChatBot for reservation management",
-        "description": "Intelligent chatbot for managing soccer field reservations via Telegram and web. It uses DeepSeek with function calling to understand natural language, validate business rules, and persist data in PostgreSQL. Web demo: https://chat-bot-front-five.vercel.app"
-      }
-    ]
-  },
-  "projectCard": {
-    "placeholder": "[ project screenshot ]",
-    "inDevelopment": "In development",
-    "deployLabels": {
-      "webDemo": "Web demo →",
-      "telegram": "Telegram Bot"
-    }
-  },
-  "tecnologias": {
-    "label": "03 — technologies",
-    "title": "My stack",
+  "habilidades": {
+    "title": "My Stack",
+    "description": "Technologies and tools I use to create modern and scalable solutions.",
     "groups": {
-      "backend": "Backend",
-      "frontend": "Frontend",
-      "tools": "Tools & Methodologies",
-      "IA & Automatización": "AI Tools"
+      "backend": "Backend & Architecture",
+      "frontend": "Frontend & UI",
+      "tools": "Tools & DevOps",
+      "ia": "AI & Automation"
     }
-  },
-  "formacion": {
-    "label": "04 — education",
-    "title": "Education & certifications",
-    "items": [
-      {
-        "id": 3,
-        "fecha": "Jun 2026 — Aug 2026",
-        "titulo": "Developer Boost 2.0",
-        "lugar": "Cluster Tecnológico Tandil"
-      },
-      {
-        "id": 2,
-        "fecha": "Mar 2026 — Mar 2026",
-        "titulo": "AI Development: From 0 to Production",
-        "lugar": "BIG School"
-      },
-      {
-        "id": 1,
-        "fecha": "2023 — in progress",
-        "titulo": "University Technician in Computer Application Development (TUDAI)",
-        "lugar": "National University of Central Buenos Aires Province (UNICEN)"
-      }
-    ]
   },
   "experiencia": {
-    "label": "05 — experience",
-    "title": "Work experience",
+    "title": "Professional Journey",
     "items": [
       {
-        "id": 4,
-        "fecha": "Jul 2026 – Sep 2026",
-        "titulo": "Full Stack Developer",
-        "lugar": "Custom e-commerce (freelance project) · Independent professional",
-        "descripcion": "Development and maintenance of a custom e-commerce platform for a tool retail business, as a freelance project."
+        "role": "Full Stack Developer",
+        "company": "Custom e-commerce (freelance project) · Independent professional",
+        "period": "Jul 2026 – Sep 2026",
+        "details": [
+          "Development and maintenance of a custom e-commerce platform for a tool retail business, as a freelance project."
+        ]
       },
       {
-        "id": 5,
-        "fecha": "May 2026 – Aug 2026",
-        "titulo": "Software sales",
-        "lugar": "Serra AI · Independent professional",
-        "descripcion": "In this role I grew in consultative software sales for the healthcare sector, learning to identify the needs of professionals and medical centers to offer solutions aligned with their work processes."
+        "role": "Software Sales",
+        "company": "Serra AI · Independent professional",
+        "period": "May 2026 – Aug 2026",
+        "details": [
+          "In this role I developed my skills in consultative software sales for the healthcare sector, learning to identify the needs of professionals and medical centers to offer solutions aligned with their work processes."
+        ]
       },
       {
-        "id": 1,
-        "fecha": "2022 – 2026",
-        "titulo": "Independent work",
-        "lugar": "Freelance",
-        "descripcion": "I provide independent work and services for various clients, both in technical/IT areas and in operational tasks related to gardening, construction, electrical work, and carpentry."
+        "role": "Independent Work",
+        "company": "Freelance",
+        "period": "2022 – 2026",
+        "details": [
+          "I provide independent work and services for various clients, both in technical/IT areas and in operational tasks related to gardening, construction, electrical work, and carpentry."
+        ]
       },
       {
-        "id": 2,
-        "fecha": "Mar 2021 – Mar 2022",
-        "titulo": "Gardening & maintenance worker",
-        "lugar": "Private services",
-        "descripcion": "I gained experience in machinery maintenance and gardening/pruning tasks for various contractors. I developed autonomy, responsibility, and organizational skills in daily work, performing in dynamic and goal-oriented environments."
+        "role": "Gardening & Maintenance Worker",
+        "company": "Private services",
+        "period": "Mar 2021 – Mar 2022",
+        "details": [
+          "I gained experience in machinery maintenance and gardening/pruning tasks for various contractors. I developed autonomy, responsibility, and organizational skills in daily work, performing in dynamic and goal-oriented environments."
+        ]
       },
       {
-        "id": 3,
-        "fecha": "Apr 2019 - Dec 2020",
-        "titulo": "Volunteer soldier",
-        "lugar": "Argentine Army - First Armored Brigade",
-        "descripcion": "I developed skills in discipline, teamwork, organization, and problem solving, fulfilling operational responsibilities and adapting to different challenges with commitment and responsibility."
+        "role": "Volunteer Soldier",
+        "company": "Argentine Army - First Armored Brigade",
+        "period": "Apr 2019 – Dec 2020",
+        "details": [
+          "I developed skills in discipline, teamwork, organization, and problem solving, fulfilling operational responsibilities and adapting to different challenges with commitment and responsibility."
+        ]
+      }
+    ]
+  },
+  "proyectos": {
+    "title": "Project Portfolio",
+    "1": {
+      "name": "API built with Java",
+      "desc": "Collaborative API for managing an electric scooter system, built with a scalable and modular microservices architecture."
+    },
+    "2": {
+      "name": "REST API Clothing Store",
+      "desc": "REST API in PHP for product management in a clothing store, structured under the MVC pattern."
+    },
+    "3": {
+      "name": "Clothing store frontend with Angular",
+      "desc": "Clothing application where customers register, choose products by color and size, and complete their order via WhatsApp."
+    },
+    "4": {
+      "name": "AI ChatBot for booking management",
+      "desc": "Intelligent chatbot for soccer field reservations via Telegram and web, using DeepSeek with function calling."
+    },
+    "verLinkedIn": "View on LinkedIn",
+    "demoWeb": "Web Demo",
+    "botTelegram": "Telegram Bot",
+    "prev": "Previous",
+    "next": "Next",
+    "project": "Project"
+  },
+  "formacion": {
+    "educacionTitle": "Academic Education",
+    "certsTitle": "Certifications",
+    "education": [
+      {
+        "year": "2023",
+        "note": "In progress",
+        "title": "University Technician in Computer Application Development (TUDAI)",
+        "institution": "National University of Central Buenos Aires Province (UNICEN)",
+        "desc": "Development of web and mobile applications with a focus on design patterns and agile methodologies."
+      }
+    ],
+    "certs": [
+      {
+        "title": "Developer Boost 2.0 (2026)",
+        "org": "Cluster Tecnológico Tandil",
+        "desc": "During the training I deepened my knowledge of Prompt Engineering, AI agents and workflows, Spec-Driven Development, automated testing, UX, technical documentation, and process automation, working with tools like Claude Code, GitHub Copilot, Cline, and Antigravity."
+      },
+      {
+        "title": "AI Development: From 0 to Production (2026)",
+        "org": "BIG School",
+        "desc": "Training in integrating AI models into real applications, from prototyping to production."
       }
     ]
   },
   "contacto": {
-    "label": "06 — contact",
-    "title": "Let's talk",
-    "items": [
-      {
-        "id": "email",
-        "label": "EMAIL",
-        "value": "joaco.r.hevia@gmail.com"
-      },
-      {
-        "id": "linkedin",
-        "label": "LINKEDIN",
-        "value": "Joaquin Hevia"
-      },
-      {
-        "id": "github",
-        "label": "GITHUB",
-        "value": "Joaco Hevia"
-      }
-    ]
+    "label": "Contact",
+    "title": "Let's Work Together",
+    "desc": "Do you have an interesting project or want to discuss opportunities? Reach out to me.",
+    "email": "Send Email",
+    "linkedin": "LinkedIn"
   }
 }

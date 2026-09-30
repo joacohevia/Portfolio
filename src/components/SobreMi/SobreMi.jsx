@@ -1,27 +1,28 @@
 import { useTranslation } from 'react-i18next';
+import fotoPerfil from '../../assets/FotoPerfilcomp.png';
 
 export default function SobreMi() {
   const { t } = useTranslation();
 
   return (
-    <section id="sobre-mi" className="section">
-      <div className="section-label">{t('sobreMi.label')}</div>
-      <h2 className="section-title">{t('sobreMi.title')}</h2>
-
+    <section id="sobre-mi" className="about-section">
       <div className="about-grid">
-        <div className="about-card wide">
-          <h3>{t('sobreMi.cards.presentacion.title')}</h3>
-          <p>
-            {t('sobreMi.cards.presentacion.textPart1')}
-            <strong>{t('sobreMi.cards.presentacion.textStrong')}</strong>
-            {t('sobreMi.cards.presentacion.textPart2')}
-          </p>
+        <div className="about-photo-wrapper">
+          <div className="about-photo">
+            <img src={fotoPerfil} alt="Joaquín Hevia" />
+            <div className="about-gradient-overlay" />
+          </div>
         </div>
-
-        <div className="about-card">
-          <h3>{t('sobreMi.cards.perfil.title')}</h3>
+        <div className="about-content">
+          <h3>{t('sobreMi.title')}</h3>
           <p>
-            {t('sobreMi.cards.perfil.text')}
+            {t('sobreMi.presentacion.p1')}
+            <strong>{t('sobreMi.presentacion.strong')}</strong>
+            {t('sobreMi.presentacion.p2')}
+          </p>
+          <p>
+            {t('sobreMi.perfil.text')}
+            <strong>{t('sobreMi.perfil.strong')}</strong>
           </p>
         </div>
       </div>

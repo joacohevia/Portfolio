@@ -1,4 +1,4 @@
 # Modidicaciones:
+acomodar para mobile
 
-agregar descarga de cv
 

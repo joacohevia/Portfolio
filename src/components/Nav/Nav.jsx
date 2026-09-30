@@ -2,93 +2,105 @@ import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import cvFile from '../../assets/CV_Joaquin_Hevia_Desarrollador_Full_Stack.pdf';
 
+const SECTION_IDS = ['sobre-mi', 'experiencia', 'habilidades', 'proyectos', 'formacion', 'contacto'];
+
 export default function Nav() {
   const { t, i18n } = useTranslation();
+  const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('');
 
   const links = [
     { href: '#sobre-mi', label: t('nav.sobreMi') },
-    { href: '#proyectos', label: t('nav.proyectos') },
-    { href: '#tecnologias', label: t('nav.tecnologias') },
-    { href: '#formacion', label: t('nav.formacion') },
     { href: '#experiencia', label: t('nav.experiencia') },
+    { href: '#habilidades', label: t('nav.habilidades') },
+    { href: '#proyectos', label: t('nav.proyectos') },
+    { href: '#formacion', label: t('nav.formacion') },
     { href: '#contacto', label: t('nav.contacto') },
   ];
 
-  const handleNavClick = (e, href) => {
-    e.preventDefault();
-    setMenuOpen(false);
+  useEffect(() => {
+    const navEl = document.querySelector('.nav');
 
+    const onScroll = () => {
+      setScrolled(window.scrollY > 20);
+
+      const navHeight = navEl ? navEl.offsetHeight : 0;
+      let current = '';
+      for (const id of SECTION_IDS) {
+        const el = document.getElementById(id);
+        if (!el) continue;
+        if (el.getBoundingClientRect().top <= navHeight + 4) {
+          current = '#' + id;
+        }
+      }
+      setActiveSection(current);
+    };
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  const scrollTo = (href) => {
+    setMenuOpen(false);
     const target = document.querySelector(href);
     if (!target) return;
-
-    const navHeight = 1;
-    const extraOffset = 5;
-    const top = target.getBoundingClientRect().top + window.scrollY - navHeight - extraOffset;
-
+    const navEl = document.querySelector('.nav');
+    const offset = navEl ? navEl.offsetHeight : 0;
+    const top = target.getBoundingClientRect().top + window.scrollY - offset;
     window.scrollTo({ top, behavior: 'smooth' });
   };
-
-  useEffect(() => {
-    const sectionEls = ['#sobre-mi', '#proyectos', '#tecnologias', '#formacion', '#experiencia', '#contacto']
-      .map(s => document.querySelector(s));
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            setActiveSection('#' + entry.target.id);
-          }
-        });
-      },
-      { threshold: 0.2 }
-    );
-
-    sectionEls.forEach(s => s && observer.observe(s));
-    return () => observer.disconnect();
-  }, []);
 
   const currentLang = i18n.language;
   const nextLang = currentLang === 'es' ? 'en' : 'es';
   const langLabel = currentLang === 'es' ? 'EN' : 'ES';
 
   return (
-    <nav className="nav">
-      <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
-        {links.map(link => (
-          <li key={link.href}>
-            <a
-              href={link.href}
-              className={activeSection === link.href ? 'active' : ''}
-              onClick={(e) => handleNavClick(e, link.href)}
-            >
-              {link.label}
-            </a>
-          </li>
-        ))}
-        <li>
-          <a href={cvFile}
+    <nav className={`nav ${scrolled ? 'scrolled' : ''}`}>
+      <div className="nav-content">
+        <a href="#inicio" className="nav-logo gradient-text-blue" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>
+          JH.
+        </a>
+        <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
+          {links.map(link => (
+            <li key={link.href}>
+              <a
+                href={link.href}
+                className={activeSection === link.href ? 'active' : ''}
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollTo(link.href);
+                }}
+              >
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+        <div className={`nav-actions ${menuOpen ? 'mobile-open' : ''}`}>
+          <a
+            href={cvFile}
             download="CV_Joaquin_Hevia_Desarrollador_Full_Stack"
             className="nav-cv-btn"
-            onClick={() => setMenuOpen(false)}>
+          >
             {t('nav.cv')}
           </a>
-        </li>
-        <li>
           <button
             className="lang-switch"
             onClick={() => i18n.changeLanguage(nextLang)}
-            aria-label={`Switch to ${nextLang === 'en' ? 'English' : 'Spanish'}`}
+            aria-label={t('nav.switchLang')}
           >
             {langLabel}
           </button>
-        </li>
-      </ul>
-
-      <button className="hamburger" onClick={() => setMenuOpen(prev => !prev)}>
-        <span /><span /><span />
-      </button>
+        </div>
+        <button className="hamburger" onClick={() => setMenuOpen(prev => !prev)}>
+          <span />
+          <span />
+          <span />
+        </button>
+      </div>
     </nav>
   );
 }

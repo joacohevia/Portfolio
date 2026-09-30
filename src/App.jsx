@@ -4,11 +4,12 @@ import './App.css';
 import Contacto from './components/Contacto/Contacto';
 import Experiencia from './components/Experiencia/Experiencia';
 import Formacion from './components/Formacion/Formacion';
+import Habilidades from './components/Habilidades/Habilidades';
 import Hero from './components/Hero/Hero';
 import Nav from './components/Nav/Nav';
 import Proyectos from './components/Proyectos/Proyectos';
 import SobreMi from './components/SobreMi/SobreMi';
-import Tecnologias from './components/Tecnologias/Tecnologias';
+
 function App() {
   const { i18n } = useTranslation();
 
@@ -22,13 +23,16 @@ function App() {
       <main>
         <Hero />
         <SobreMi />
-        <Proyectos />
-        <Tecnologias />
-        <Formacion />
         <Experiencia />
+        <Habilidades />
+        <Proyectos />
+        <Formacion />
         <Contacto />
       </main>
-      <footer className="footer">
+      <footer>
+        <p>
+          © 2026 Joaquín Hevia
+        </p>
       </footer>
     </>
   );
