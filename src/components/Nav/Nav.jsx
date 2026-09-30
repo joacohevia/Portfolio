@@ -78,6 +78,15 @@ export default function Nav() {
               </a>
             </li>
           ))}
+          <li className="nav-lang-item">
+            <button
+              className="lang-switch"
+              onClick={() => { i18n.changeLanguage(nextLang); setMenuOpen(false); }}
+              aria-label={t('nav.switchLang')}
+            >
+              {langLabel}
+            </button>
+          </li>
         </ul>
         <div className={`nav-actions ${menuOpen ? 'mobile-open' : ''}`}>
           <a
@@ -88,7 +97,7 @@ export default function Nav() {
             {t('nav.cv')}
           </a>
           <button
-            className="lang-switch"
+            className="lang-switch lang-switch-desktop"
             onClick={() => i18n.changeLanguage(nextLang)}
             aria-label={t('nav.switchLang')}
           >

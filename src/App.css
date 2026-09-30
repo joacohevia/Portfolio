@@ -142,6 +142,10 @@ body {
   gap: 0.75rem;
 }
 
+.nav-lang-item {
+  display: none;
+}
+
 .lang-switch {
   font-family: var(--font-body);
   font-size: 0.8125rem;
@@ -232,12 +236,17 @@ body {
     display: flex;
   }
 
-  .nav-actions {
+  .lang-switch-desktop {
     display: none;
   }
 
-  .nav-links.mobile-open .nav-actions {
-    display: flex;
+  .nav-lang-item {
+    display: block;
+  }
+
+  .nav-actions {
+    margin-left: auto;
+    margin-right: 0.75rem;
   }
 }
 
@@ -1338,5 +1347,103 @@ footer span {
 
   .contacto-title {
     font-size: 1.75rem;
+  }
+
+  .hero {
+    padding: 0 1rem;
+  }
+
+  .hero-content {
+    margin: 0;
+    gap: 2.5rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.25rem, 9vw, 5.75rem);
+  }
+
+  .hero-desc {
+    font-size: clamp(1.25rem, 5vw, 2rem);
+  }
+
+  .hero-btns {
+    gap: 0.75rem;
+  }
+
+  .about-section,
+  .experience-section,
+  .formacion-section {
+    padding: 4rem 1.25rem;
+  }
+
+  .projects-section {
+    padding: 3rem 1.25rem;
+  }
+
+  .contacto-section {
+    padding: 3rem 1.25rem;
+  }
+
+  .contacto-card {
+    padding: 2rem 1.25rem;
+  }
+
+  .project-visual {
+    min-height: 200px;
+  }
+
+  .project-project-info {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .skills-pill-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+
+  .skill-pill {
+    padding: 0.75rem 0.5rem;
+  }
+}
+
+/*
+ANIMACION STATS
+*/
+@media (min-width: 1024px) {
+  .hero-stats {
+    align-items: flex-start;          /* cards pegados al borde derecho */
+  }
+
+  .stat-card {
+    width: 170px;                   /* mismo ancho para los 3 */
+    box-sizing: border-box;
+    padding: 1rem 3.25rem;
+    overflow: hidden;
+    cursor: pointer;
+    transition: width 0.35s ease, box-shadow 0.35s ease;
+  }
+
+  .stat-value {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .stat-label {
+    display: block;
+    opacity: 0;
+    white-space: nowrap;
+    transition: opacity 0.3s ease;
+  }
+
+  .stat-card:hover {
+    width: 520px;                   /* se amplía hacia la izquierda, borde derecho fijo */
+    transform: none;                /* anula el translateY de la regla base */
+    box-shadow: 0 12px 40px rgba(139, 92, 246, 0.2);
+  }
+
+  .stat-card:hover .stat-label {
+    opacity: 1;
   }
 }

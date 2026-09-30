@@ -1,4 +1,2 @@
 # Modidicaciones:
-acomodar para mobile
-
 
