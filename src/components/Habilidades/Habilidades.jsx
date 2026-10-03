@@ -66,7 +66,7 @@ export default function Habilidades() {
   const { t } = useTranslation();
 
   return (
-    <section id="habilidades" className="skills-section">
+    <section id="habilidades" className="skills-section reveal">
       <div className="skills-intro">
         <h2 className="skills-title">
           {t('habilidades.title')}

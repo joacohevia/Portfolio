@@ -4,7 +4,7 @@ export default function Contacto() {
   const { t } = useTranslation();
 
   return (
-    <section id="contacto" className="contacto-section">
+    <section id="contacto" className="contacto-section reveal">
       <div className="contacto-card">
         <p className="contacto-eyebrow">
           {t('contacto.label')}

@@ -48,22 +48,39 @@
   },
   "experiencia": {
     "title": "Trayectoria Profesional",
+    "verCodigo": "Ver código",
+    "verProyecto": "Ver proyecto",
     "items": [
       {
         "role": "Desarrollador Full Stack",
-        "company": "E-commerce a medida (proyecto freelance) · Profesional independiente",
-        "period": "Jul 2026 – Sep 2026",
+        "company": "Carpintería a medida · Proyecto freelance",
+        "period": "Oct 2026 – En curso",
         "details": [
-          "Desarrollo y mantenimiento de una plataforma e-commerce a medida para un comercio de venta de herramientas, como proyecto freelance."
+          "Diseño y desarrollo de una landing page para presentar el catálogo de productos y simplificar la solicitud de presupuestos.",
+        "Implementación de un chatbot con IA que permite al cliente diseñar un mueble a medida y visualizarlo de forma ilustrativa antes de pedir cotización.",
+        "Gestión completa del proyecto: relevamiento de necesidades con el cliente, desarrollo, despliegue y puesta en producción."
         ]
       },
       {
-        "role": "Ventas de software",
-        "company": "Serra AI · Profesional independiente",
-        "period": "May 2026 – Ago 2026",
+        "role": "Desarrollador Full Stack",
+        "company": "Comercio de herramientas · Proyecto freelance",
+        "period": "Jul 2026 – Sep 2026",
+        "project": true,
         "details": [
-          "Durante esta experiencia me desarrollé en la venta consultiva de software para el sector de la salud, aprendiendo a identificar las necesidades de profesionales y centros médicos para ofrecer soluciones alineadas con sus procesos de trabajo."
-        ]
+        "Desarrollo y mantenimiento de una plataforma e-commerce a medida para un comercio de venta de herramientas.",
+        "Implementación de catálogo de productos, carrito de compras y gestión de pedidos.",
+        "Administración del proyecto de punta a punta, desde el diseño de la base de datos hasta el despliegue."
+      ]
+      },
+      {
+          "role": "Ventas consultivas de software",
+          "company": "Serra AI · Profesional independiente",
+          "period": "May 2026 – Ago 2026",
+          "details": [
+            "Venta consultiva de software para el sector salud, dirigida a profesionales y centros médicos.",
+            "Relevamiento de necesidades y procesos de trabajo de cada cliente para proponer soluciones alineadas a su operación.",
+            "Comunicación directa con clientes no técnicos, traduciendo funcionalidades en beneficios concretos."
+          ]
       },
       {
         "role": "Trabajos independientes",
@@ -83,7 +100,7 @@
       },
       {
         "role": "Soldado voluntario",
-        "company": "Ejercito Argentino - Primera Brigada Blindada",
+        "company": "Ejército Argentino - Primera Brigada Blindada",
         "period": "Abr 2019 - Dic 2020",
         "details": [
           "Desarrollé habilidades de disciplina, trabajo en equipo, organización y resolución de problemas, cumpliendo responsabilidades operativas y adaptándome a distintos desafíos con compromiso y responsabilidad."
@@ -110,6 +127,7 @@
       "desc": "Chatbot inteligente para reservas de canchas de fútbol vía Telegram y web, con DeepSeek y function calling."
     },
     "verLinkedIn": "Ver en LinkedIn",
+    "verCodigo": "Ver código",
     "demoWeb": "Demo web",
     "botTelegram": "Bot Telegram",
     "prev": "Anterior",
@@ -129,6 +147,11 @@
       }
     ],
     "certs": [
+      {
+        "title": "Desarrollo con IA: El nuevo programador",
+        "org": "BIG School",
+        "desc": "Formación práctica en desarrollo de software asistido por IA: fundamentos de LLM y prompting, harness engineering (agentes, guardarraíles y contexto), spec-driven development y diseño de sistemas multiagente con OpenCode, coordinando agentes y subagentes especializados (planificar, implementar y revisar)."
+      },
       {
         "title": "Developer Boost 2.0 (2026)",
         "org": "Cluster Tecnológico Tandil",

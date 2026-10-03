@@ -6,7 +6,7 @@ export default function Formacion() {
   const certs = t('formacion.certs', { returnObjects: true });
 
   return (
-    <section id="formacion" className="formacion-section">
+    <section id="formacion" className="formacion-section reveal">
       <div className="formacion-grid">
         <div className="formacion-education">
           <h3 className="formacion-title">

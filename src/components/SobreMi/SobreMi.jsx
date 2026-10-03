@@ -5,7 +5,7 @@ export default function SobreMi() {
   const { t } = useTranslation();
 
   return (
-    <section id="sobre-mi" className="about-section">
+    <section id="sobre-mi" className="about-section reveal">
       <div className="about-grid">
         <div className="about-photo-wrapper">
           <div className="about-photo">

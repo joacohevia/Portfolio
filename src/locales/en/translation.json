@@ -48,21 +48,38 @@
   },
   "experiencia": {
     "title": "Professional Journey",
+    "verCodigo": "View code",
+    "verProyecto": "View project",
     "items": [
       {
         "role": "Full Stack Developer",
-        "company": "Custom e-commerce (freelance project) · Independent professional",
-        "period": "Jul 2026 – Sep 2026",
+        "company": "Custom carpentry · Freelance project",
+        "period": "Oct 2026 – In progress",
         "details": [
-          "Development and maintenance of a custom e-commerce platform for a tool retail business, as a freelance project."
+          "Design and development of a landing page to showcase the product catalog and simplify quote requests.",
+          "Implementation of an AI chatbot that lets the client design a custom piece of furniture and visualize it illustratively before requesting a quote.",
+          "Full project management: gathering the client's requirements, development, deployment, and going live."
         ]
       },
       {
-        "role": "Software Sales",
+        "role": "Full Stack Developer",
+        "company": "Tool retail business · Freelance project",
+        "period": "Jul 2026 – Sep 2026",
+        "project": true,
+        "details": [
+          "Development and maintenance of a custom e-commerce platform for a tool retail business.",
+          "Implementation of the product catalog, shopping cart, and order management.",
+          "End-to-end project management, from database design to deployment."
+        ]
+      },
+      {
+        "role": "Consultative Software Sales",
         "company": "Serra AI · Independent professional",
         "period": "May 2026 – Aug 2026",
         "details": [
-          "In this role I developed my skills in consultative software sales for the healthcare sector, learning to identify the needs of professionals and medical centers to offer solutions aligned with their work processes."
+          "Consultative software sales for the healthcare sector, aimed at professionals and medical centers.",
+          "Gathering each client's needs and work processes to propose solutions aligned with their operations.",
+          "Direct communication with non-technical clients, translating features into concrete benefits."
         ]
       },
       {
@@ -110,6 +127,7 @@
       "desc": "Intelligent chatbot for soccer field reservations via Telegram and web, using DeepSeek with function calling."
     },
     "verLinkedIn": "View on LinkedIn",
+    "verCodigo": "View code",
     "demoWeb": "Web Demo",
     "botTelegram": "Telegram Bot",
     "prev": "Previous",
@@ -129,6 +147,11 @@
       }
     ],
     "certs": [
+      {
+        "title": "AI Development: The New Programmer",
+        "org": "BIG School",
+        "desc": "Practical training in AI-assisted software development: LLM and prompting fundamentals, harness engineering (agents, guardrails, and context), spec-driven development, and multi-agent system design with OpenCode, coordinating specialized agents and subagents (plan, implement, review)."
+      },
       {
         "title": "Developer Boost 2.0 (2026)",
         "org": "Cluster Tecnológico Tandil",
