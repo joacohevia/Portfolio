@@ -108,7 +108,7 @@ export default function Proyectos() {
 
       <div
         key={active}
-        className="project-card fade-up"
+        className={`project-card fade-up${proj.buttons.length > 2 ? ' project-card--many' : ''}`}
         onClick={openLinkedIn}
         role="button"
         tabIndex={0}

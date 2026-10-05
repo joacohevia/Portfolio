@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import cvFile from '../../assets/CV_Joaquin_Hevia_Desarrollador_Full_Stack.pdf';
+import cvFileEs from '../../assets/CV_Joaquin_Hevia_Desarrollador_Full_Stack.pdf';
+import cvFileEn from '../../assets/CV_Joaquin_Hevia_Desarrollador_Full_Stack_english.pdf';
 
 const SECTION_IDS = ['sobre-mi', 'experiencia', 'habilidades', 'proyectos', 'formacion', 'contacto'];
 
@@ -57,6 +58,10 @@ export default function Nav() {
   const nextLang = currentLang === 'es' ? 'en' : 'es';
   const langLabel = currentLang === 'es' ? 'EN' : 'ES';
 
+  const isEn = currentLang?.startsWith('en');
+  const cvFile = isEn ? cvFileEn : cvFileEs;
+  const cvName = isEn ? 'CV_Joaquin_Hevia_Full_Stack_Developer' : 'CV_Joaquin_Hevia_Desarrollador_Full_Stack';
+
   return (
     <nav className={`nav ${scrolled ? 'scrolled' : ''}`}>
       <div className="nav-content">
@@ -91,7 +96,7 @@ export default function Nav() {
         <div className={`nav-actions ${menuOpen ? 'mobile-open' : ''}`}>
           <a
             href={cvFile}
-            download="CV_Joaquin_Hevia_Desarrollador_Full_Stack"
+            download={cvName}
             className="nav-cv-btn"
           >
             {t('nav.cv')}
