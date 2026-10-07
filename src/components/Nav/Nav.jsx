@@ -48,10 +48,8 @@ export default function Nav() {
     setMenuOpen(false);
     const target = document.querySelector(href);
     if (!target) return;
-    const navEl = document.querySelector('.nav');
-    const offset = navEl ? navEl.offsetHeight : 0;
-    const top = target.getBoundingClientRect().top + window.scrollY - offset;
-    window.scrollTo({ top, behavior: 'smooth' });
+    const top = target.getBoundingClientRect().top + window.scrollY;
+    window.scrollTo({ top, left: 0, behavior: 'smooth' });
   };
 
   const currentLang = i18n.language;
@@ -65,7 +63,7 @@ export default function Nav() {
   return (
     <nav className={`nav ${scrolled ? 'scrolled' : ''}`}>
       <div className="nav-content">
-        <a href="#inicio" className="nav-logo gradient-text-blue" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>
+        <a href="#inicio" className="nav-logo gradient-text-blue" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, left: 0, behavior: 'smooth' }); }}>
           JH.
         </a>
         <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>

@@ -9,6 +9,14 @@ const STATS = [
 export default function Hero() {
   const { t } = useTranslation();
 
+  const scrollToProyectos = (e) => {
+    e.preventDefault();
+    const target = document.querySelector('#proyectos');
+    if (!target) return;
+    const top = target.getBoundingClientRect().top + window.scrollY;
+    window.scrollTo({ top, left: 0, behavior: 'smooth' });
+  };
+
   return (
     <section className="hero" id="inicio">
       <div className="hero-grid" />
@@ -28,7 +36,7 @@ export default function Hero() {
             <strong>{t('hero.description.strong')}</strong>
           </p>
           <div className="hero-btns">
-            <a href="#proyectos" className="btn-primary">
+            <a href="#proyectos" className="btn-primary" onClick={scrollToProyectos}>
               {t('hero.verProyectos')}
             </a>
             <a
